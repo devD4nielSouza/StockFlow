@@ -1,11 +1,49 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "StockFlow.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "StockFlow.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StockFlow.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StockFlow.Application.dll": {}
+        }
+      },
+      "StockFlow.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/StockFlow.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StockFlow.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "StockFlow.Application/1.0.0": {
+      "type": "project",
+      "path": "../StockFlow.Application/StockFlow.Application.csproj",
+      "msbuildProject": "../StockFlow.Application/StockFlow.Application.csproj"
+    },
+    "StockFlow.Domain/1.0.0": {
+      "type": "project",
+      "path": "../StockFlow.Domain/StockFlow.Domain.csproj",
+      "msbuildProject": "../StockFlow.Domain/StockFlow.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "StockFlow.Application >= 1.0.0",
+      "StockFlow.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Pc positivo\\.nuget\\packages\\": {}
@@ -32,7 +70,14 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj": {
+              "projectPath": "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj"
+            },
+            "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Domain\\StockFlow.Domain.csproj": {
+              "projectPath": "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Domain\\StockFlow.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
