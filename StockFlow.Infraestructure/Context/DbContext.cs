@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.Identity;
 
 namespace StockFlow.Infraestructure.Context;
 
-public class DbContext : IdentityDbContext<IdentityUser>
+public class StockDbContext : IdentityDbContext<IdentityUser>
 {
-    public DbContext(DbContextOptions<DbContext> options)
+    public StockDbContext(DbContextOptions<DbContext> options)
         : base(options)
     {
     }

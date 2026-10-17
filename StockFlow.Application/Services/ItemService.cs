@@ -34,7 +34,8 @@ public class ItemService : IItemService
             nome = dto.nome,
             descricao = dto.descricao,
             estoque = dto.estoque,
-            preco = dto.preco
+            preco = dto.preco,
+            idCategoria = dto.idCategoria
         };
 
         await _repository.AddAsync(item);
@@ -51,6 +52,7 @@ public class ItemService : IItemService
         item.descricao = dto.descricao;
         item.estoque = dto.estoque;
         item.preco = dto.preco;
+        item.idCategoria = dto.idCategoria;
 
         await _repository.UpdateAsync(item);
         return MapToDto(item);
@@ -81,7 +83,8 @@ public class ItemService : IItemService
             nome = item.nome,
             descricao = item.descricao,
             estoque = item.estoque,
-            preco = item.preco
+            preco = item.preco,
+            idCategoria = item.idCategoria
         };
     }
 
