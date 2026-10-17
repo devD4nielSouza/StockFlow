@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Infraestructure\\StockFlow.Infraestructure.csproj": {}
+    "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Infraestructure\\StockFlow.Infraestructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj": {
+    "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj",
+        "projectUniqueName": "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj",
         "projectName": "StockFlow.Application",
-        "projectPath": "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj",
+        "projectPath": "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj",
         "packagesPath": "C:\\Users\\Pc positivo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\obj\\",
+        "outputPath": "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pc positivo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -678,14 +678,14 @@
         }
       }
     },
-    "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Infraestructure\\StockFlow.Infraestructure.csproj": {
+    "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Infraestructure\\StockFlow.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Infraestructure\\StockFlow.Infraestructure.csproj",
+        "projectUniqueName": "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Infraestructure\\StockFlow.Infraestructure.csproj",
         "projectName": "StockFlow.Infraestructure",
-        "projectPath": "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Infraestructure\\StockFlow.Infraestructure.csproj",
+        "projectPath": "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Infraestructure\\StockFlow.Infraestructure.csproj",
         "packagesPath": "C:\\Users\\Pc positivo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Infraestructure\\obj\\",
+        "outputPath": "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pc positivo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -701,8 +701,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj": {
-                "projectPath": "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj"
+              "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj": {
+                "projectPath": "c:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Application\\StockFlow.Application.csproj"
               },
               "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Domain\\StockFlow.Domain.csproj": {
                 "projectPath": "C:\\Users\\Pc positivo\\Projetos C#\\StockFlow\\StockFlow.Domain\\StockFlow.Domain.csproj"
@@ -726,6 +726,26 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[10.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
