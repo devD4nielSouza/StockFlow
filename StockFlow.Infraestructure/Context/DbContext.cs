@@ -2,16 +2,14 @@
 using StockFlow.Infraestructure.Configuration;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
 using Microsoft.AspNetCore.Identity;
 
 namespace StockFlow.Infraestructure.Context;
 
 public class StockDbContext : IdentityDbContext<IdentityUser>
 {
-    public StockDbContext(DbContextOptions<DbContext> options)
+    public StockDbContext(DbContextOptions<StockDbContext> options)
         : base(options)
     {
     }

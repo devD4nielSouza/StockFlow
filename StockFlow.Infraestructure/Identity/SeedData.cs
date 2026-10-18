@@ -18,7 +18,7 @@ public class SeedData
         var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
         await context.Database.MigrateAsync();
-
+        Console.WriteLine("SEEDDATA INICIADO !!");
         // =====================================================================
         // 1. SEED DE CATEGORIAS
         // =====================================================================
@@ -118,7 +118,7 @@ public class SeedData
         // O UserManager é o serviço do Identity para gerenciar usuários.
         // Ele permite criar, buscar, atualizar e deletar usuários.
         // =====================================================================
-        var adminEmail = "admin@catteria.com";
+        var adminEmail = "admin@email.com";
         var adminUser = await userManager.FindByEmailAsync(adminEmail);
 
         if (adminUser == null)

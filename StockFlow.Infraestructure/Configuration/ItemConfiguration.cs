@@ -15,7 +15,7 @@ public class ItemConfiguration : IEntityTypeConfiguration<Item>
 
         builder.Property(i => i.descricao).HasMaxLength(250);
 
-        builder.Property(i => i.preco).IsRequired();
+        builder.Property(i => i.preco).IsRequired().HasColumnType("decimal(18,2)");
 
         builder.Property(i => i.estoque).IsRequired();
 

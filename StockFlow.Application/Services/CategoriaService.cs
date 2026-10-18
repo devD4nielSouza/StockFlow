@@ -10,7 +10,7 @@ public class CategoriaService : ICategoriaService
 {
     private readonly ICategoriaRepository _repository;
 
-    CategoriaService(ICategoriaRepository categoriaRepository)
+    public CategoriaService(ICategoriaRepository categoriaRepository)
     {
         _repository = categoriaRepository;
     }

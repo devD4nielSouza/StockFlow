@@ -11,4 +11,8 @@
     <ProjectReference Include="..\StockFlow.Infraestructure\StockFlow.Infraestructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.13" />
+  </ItemGroup>
+
 </Project>
