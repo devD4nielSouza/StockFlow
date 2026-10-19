@@ -16,6 +16,7 @@ public class StockDbContext : IdentityDbContext<IdentityUser>
 
         public DbSet<Item> Item { get; set; }
         public DbSet<Categoria> Categoria {get;set;}
+        public DbSet<LogItems> LogItems { get; set; }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -23,5 +24,6 @@ public class StockDbContext : IdentityDbContext<IdentityUser>
 
         modelBuilder.ApplyConfiguration(new CategoriaConfiguration());
         modelBuilder.ApplyConfiguration(new ItemConfiguration());
+        modelBuilder.ApplyConfiguration(new LogItemsConfiguration());
     }
 }

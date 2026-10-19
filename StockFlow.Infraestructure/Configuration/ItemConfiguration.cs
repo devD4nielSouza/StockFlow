@@ -23,5 +23,7 @@ public class ItemConfiguration : IEntityTypeConfiguration<Item>
         .WithMany(c => c.Items)
         .HasForeignKey(p => p.idCategoria)
         .OnDelete(DeleteBehavior.Restrict);
+
+        
     }
 }

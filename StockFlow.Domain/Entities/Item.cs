@@ -12,4 +12,5 @@ public class Item
     public decimal preco {get;set;}
     public DateTime criadoEm {get;set;}
     public Categoria? Categoria {get;set;}
+    public virtual ICollection<LogItems> Logs {get;set;} = new List<LogItems>();
 }
